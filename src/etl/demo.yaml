@@ -1,0 +1,23 @@
+pipelines:
+  - name: etl-gmail-to-landing-accounts
+    extractor:
+      type: ExtractorPostgres
+      config:
+        user: postgres
+        password: postgres
+        host: localhost
+        port: 5432
+        database: gmail
+    loader:
+      type: LoaderS3
+      config:
+        bucket: my-landing-bucket
+        prefix: landing-data
+    transformer:
+      type: PythonTransformer
+      config:
+        code: |
+          def transform(data):
+            for i, value in enumerate(data):
+              data[i]["data"] = decode(value["data"], "tz.gzip")
+            return data
