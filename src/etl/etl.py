@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from etl.logger import Logger
 
 
 class Extractor(ABC):
@@ -44,6 +45,9 @@ class ETL(ABC):
         self.loader.load(data)
 
     def run(self):
+        Logger.emit("Starting extracting process", log_type=Logger.INFO)
         data = self.extract()
+        Logger.emit("Starting transform process", log_type=Logger.INFO)
         transformed_data = self.transform(data)
+        Logger.emit("Starting load process", log_type=Logger.INFO)
         self.load(transformed_data)

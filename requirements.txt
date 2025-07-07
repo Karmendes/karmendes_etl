@@ -5,7 +5,7 @@ distlib==0.3.9
 filelock==3.18.0
 identify==2.6.12
 isort==6.0.1
--e git+ssh://git@github.com/Karmendes/karmendes_etl.git@2b2d3b0274879ddabe6150284ee9472198fc7155#egg=karmendes_etl
+-e git+ssh://git@github.com/Karmendes/karmendes_etl.git@7e2e17d29359372ef8fc8f6bf8a1478b03214d3a#egg=karmendes_etl
 mccabe==0.7.0
 nodeenv==1.9.1
 platformdirs==4.3.8
