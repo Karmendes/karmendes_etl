@@ -9,7 +9,7 @@ filelock==3.18.0
 identify==2.6.12
 idna==3.10
 isort==6.0.1
--e git+ssh://git@github.com/Karmendes/karmendes_etl.git@106f4511f8011f9a5a332888df25fbae0a1bb2ad#egg=karmendes_etl
+-e git+ssh://git@github.com/Karmendes/karmendes_etl.git@1137d9271763cf65367e60a252604dcbc3473d8d#egg=karmendes_etl
 mccabe==0.7.0
 nodeenv==1.9.1
 platformdirs==4.3.8

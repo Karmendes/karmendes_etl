@@ -1,5 +1,5 @@
-from src.etl.etl import Extractor
-from src.etl.handlers.api.requester import HttpClient
+from etl.etl import Extractor
+from etl.handlers.api.requester import HttpClient
 
 
 class ExtractorGetHttp(Extractor):
