@@ -15,7 +15,9 @@ license = { text="MIT" }
 dependencies = [
     "PyYAML",
     "termcolor",
-    "retry-requests"
+    "retry-requests",
+    "pandas",
+    "SQLAlchemy"
 ]
 
 [project.urls]
