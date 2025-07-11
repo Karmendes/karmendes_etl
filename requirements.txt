@@ -9,7 +9,7 @@ filelock==3.18.0
 identify==2.6.12
 idna==3.10
 isort==6.0.1
--e git+ssh://git@github.com/Karmendes/karmendes_etl.git@637462a5a07515ae1a2793228e3bdfdfe84b35be#egg=karmendes_etl
+-e git+ssh://git@github.com/Karmendes/karmendes_etl.git@1d1b6bf11f48701a0ab9e1e78183c8338e27ccf2#egg=karmendes_etl
 mccabe==0.7.0
 nodeenv==1.9.1
 numpy==2.3.1
@@ -17,6 +17,7 @@ pandas==2.3.1
 platformdirs==4.3.8
 pre_commit==4.2.0
 pylint==3.3.7
+PyMySQL==1.1.1
 python-dateutil==2.9.0.post0
 pytz==2025.2
 PyYAML==6.0.2
